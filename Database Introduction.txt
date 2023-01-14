@@ -8,12 +8,12 @@ create table Minions
 	Age int
 );
 
-create table towns
+create table Towns
 (
 	Id int not null primary key,
 	[Name] char
 );
 
 alter table Minions
-add TownId int not null;
+add TownId int not null foreign key references Towns(Id);
 
