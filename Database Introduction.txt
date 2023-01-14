@@ -14,3 +14,6 @@ create table towns
 	[Name] char
 );
 
+alter table Minions
+add TownId int not null;
+
