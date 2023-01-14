@@ -1,11 +1,16 @@
 --drop database Minions
 
-create database Minions
-
+use Minions
 create table Minions 
 (
-	Id int,
+	Id int not null primary key,
 	[Name] char,
 	Age int
+);
+
+create table towns
+(
+	Id int not null primary key,
+	[Name] char
 );
 
