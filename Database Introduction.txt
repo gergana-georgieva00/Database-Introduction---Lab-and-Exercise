@@ -1,3 +1,11 @@
 --drop database Minions
 
 create database Minions
+
+create table Minions 
+(
+	Id int,
+	[Name] char,
+	Age int
+);
+
