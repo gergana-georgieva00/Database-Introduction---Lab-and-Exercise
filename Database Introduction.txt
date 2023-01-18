@@ -15,8 +15,10 @@ create table Towns
 );
 
 alter table Minions
-add TownId int not null foreign key references Towns(Id);
+add TownId int not null;
 
+alter table Minions 
+add foreign key (TownId) references Towns(Id);
 
 
 
