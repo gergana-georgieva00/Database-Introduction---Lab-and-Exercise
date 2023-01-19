@@ -57,6 +57,8 @@ insert into Minions (Id, [Name], Age, TownId)
 values (1, 'Kevin', 22, 1),
 	   (2, 'Bob', 15, 3),
 	   (3, 'Steward', null, 2);
+	   
+truncate table Minions
 
 
 
