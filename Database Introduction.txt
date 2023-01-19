@@ -63,6 +63,18 @@ truncate table Minions
 drop table Minions
 drop table Towns
 
+create table People
+(
+	Id int not null primary key IDENTITY,
+	[Name] nvarchar(200) not null,
+	Picture image,
+	Height float(2),
+	[Weight] float(2),
+	Gender varchar(1) not null check (Gender IN('m', 'f')),
+	Birthdate datetime not null,
+	Biography ntext
+);
+
 
 
 
