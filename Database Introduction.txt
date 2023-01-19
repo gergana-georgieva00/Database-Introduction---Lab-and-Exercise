@@ -81,6 +81,16 @@ values ('Name1', '/some/path/image.png', null, 2, 'm', 1-1-1999, 'Biography'),
 	   ('Name3', '/some/path/image.png', null, 2, 'm', 1-1-1999, 'Biography'),
 	   ('Name4', '/some/path/image.png', null, 2, 'm', 1-1-1999, 'Biography'),
 	   ('Name5', '/some/path/image.png', null, 2, 'm', 1-1-1999, 'Biography');
+	   
+create table Users
+(
+	Id bigint not null primary key identity,
+	Username varchar(30) not null unique,
+	Password varchar(26) not null,
+	ProfilePicture image,
+	LastLoginTime datetime,
+	IsDeleted varchar(5) not null check (IsDeleted IN('true', 'false')),
+);
 
 
 
