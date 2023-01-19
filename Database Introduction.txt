@@ -60,6 +60,9 @@ values (1, 'Kevin', 22, 1),
 	   
 truncate table Minions
 
+drop table Minions
+drop table Towns
+
 
 
 
