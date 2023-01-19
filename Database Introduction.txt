@@ -92,6 +92,13 @@ create table Users
 	IsDeleted varchar(5) not null check (IsDeleted IN('true', 'false')),
 );
 
+insert into Users
+values ('Username1', '123', '/some/path/image.png', 1-1-1999, 'true'),
+	   ('Username2', '123', '/some/path/image.png', 1-1-1999, 'true'),
+	   ('Username3', '123', '/some/path/image.png', 1-1-1999, 'true'),
+	   ('Username4', '123', '/some/path/image.png', 1-1-1999, 'true'),
+	   ('Username5', '123', '/some/path/image.png', 1-1-1999, 'true');
+
 
 
 
