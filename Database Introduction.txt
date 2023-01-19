@@ -20,6 +20,31 @@ add TownId int not null;
 alter table Minions 
 add foreign key (TownId) references Towns(Id);
 
+drop table Minions;
+drop table Towns;
+
+use Minions
+create table Minions 
+(
+	Id int not null primary key,
+	[Name] varchar(1000),
+	Age int
+);
+
+use Minions
+create table Towns
+(
+	Id int not null primary key,
+	[Name] varchar(1000)
+);
+
+alter table Minions
+add TownId int not null;
+
+use Minions
+alter table Minions 
+add foreign key (TownId) references Towns(Id);
+
 
 
 
