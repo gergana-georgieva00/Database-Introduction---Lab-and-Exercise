@@ -75,6 +75,13 @@ create table People
 	Biography ntext
 );
 
+insert into People 
+values ('Name1', '/some/path/image.png', null, 2, 'm', 1-1-1999, 'Biography'),
+	   ('Name2', '/some/path/image.png', null, 2, 'm', 1-1-1999, 'Biography'),
+	   ('Name3', '/some/path/image.png', null, 2, 'm', 1-1-1999, 'Biography'),
+	   ('Name4', '/some/path/image.png', null, 2, 'm', 1-1-1999, 'Biography'),
+	   ('Name5', '/some/path/image.png', null, 2, 'm', 1-1-1999, 'Biography');
+
 
 
 
