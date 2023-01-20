@@ -127,6 +127,13 @@ drop table Users
 	IsDeleted varchar(5) not null check (IsDeleted IN('true', 'false')),
 );
 
+use Minions 
+alter table Users
+add constraint df_lastLoginTime
+default GETDATE() for LastLoginTime;
+
+
+
 
 
 
