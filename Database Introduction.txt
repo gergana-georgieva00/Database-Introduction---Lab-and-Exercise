@@ -140,6 +140,10 @@ use Minions
 alter table Users
 add primary key(Id);
 
+use Minions
+alter table Users
+add constraint ch_username check (len(Username) >= 3)
+
 
 
 
