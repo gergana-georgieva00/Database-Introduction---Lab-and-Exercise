@@ -108,6 +108,25 @@ alter table Users
 add constraint [composite_key]
 primary key (Id, Username)
 
+alter table Users 
+add constraint [check] 
+check (len([Password]) >= 5);
+
+
+use Minions
+drop table Users
+
+ use Minions
+ create table Users
+(
+	Id bigint not null primary key identity,
+	Username varchar(30) not null unique,
+	Password varchar(26) not null check (len([Password]) >= 5),
+	ProfilePicture image,
+	LastLoginTime datetime,
+	IsDeleted varchar(5) not null check (IsDeleted IN('true', 'false')),
+);
+
 
 
 
