@@ -98,6 +98,15 @@ values ('Username1', '123', '/some/path/image.png', 1-1-1999, 'true'),
 	   ('Username3', '123', '/some/path/image.png', 1-1-1999, 'true'),
 	   ('Username4', '123', '/some/path/image.png', 1-1-1999, 'true'),
 	   ('Username5', '123', '/some/path/image.png', 1-1-1999, 'true');
+	   
+use Minions
+alter table Users 
+drop constraint [PK__Users__3214EC07CE043FF4];
+
+use Minions 
+alter table Users 
+add constraint [composite_key]
+primary key (Id, Username)
 
 
 
