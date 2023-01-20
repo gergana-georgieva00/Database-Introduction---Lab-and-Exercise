@@ -136,6 +136,10 @@ use Minions
 alter table Users
 drop constraint [PK__Users__3214EC07B8F558C1];
 
+use Minions 
+alter table Users
+add primary key(Id);
+
 
 
 
