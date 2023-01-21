@@ -159,6 +159,24 @@ values ('Name1', 'notes'),
 	   ('Name3', 'notes'),
 	   ('Name4', 'notes'),
 	   ('Name5', 'notes');
+	   
+use Movies
+create table Genres
+(
+	Id bigint not null primary key identity,
+	GenreName varchar(50) not null,
+	Notes ntext
+);
+
+use Movies
+insert into Genres
+values ('Name1', 'notes'),
+	   ('Name2', 'notes'),
+	   ('Name3', 'notes'),
+	   ('Name4', 'notes'),
+	   ('Name5', 'notes');
+	   
+
 
 
 
