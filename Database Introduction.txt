@@ -176,7 +176,21 @@ values ('Name1', 'notes'),
 	   ('Name4', 'notes'),
 	   ('Name5', 'notes');
 	   
+use Movies
+create table Categories 
+(
+	Id bigint not null primary key identity,
+	CategoryName varchar(50) not null,
+	Notes ntext
+);
 
+use Movies
+insert into Categories
+values ('Name1', 'notes'),
+	   ('Name2', 'notes'),
+	   ('Name3', 'notes'),
+	   ('Name4', 'notes'),
+	   ('Name5', 'notes');
 
 
 
