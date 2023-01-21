@@ -191,6 +191,28 @@ values ('Name1', 'notes'),
 	   ('Name3', 'notes'),
 	   ('Name4', 'notes'),
 	   ('Name5', 'notes');
+	   
+use Movies
+create table Movies 
+(
+	Id bigint not null primary key identity,
+	Title varchar(50) not null,
+	DirectorId bigint not null,
+	CopyrightYear datetime not null,
+	[Length] int not null,
+	GenreId bigint,
+	CategoryId bigint,
+	Rating tinyint,
+	Notes ntext
+);
+
+use Movies
+insert into Movies
+values ('Title1', 123, 1-1-1999, 120, 123, 456, 4, 'notes'),
+	   ('Title2', 123, 1-1-1999, 120, 123, 456, 4, 'notes'),
+	   ('Title3', 123, 1-1-1999, 120, 123, 456, 4, 'notes'),
+	   ('Title4', 123, 1-1-1999, 120, 123, 456, 4, 'notes'),
+	   ('Title5', 123, 1-1-1999, 120, 123, 456, 4, 'notes');
 
 
 
