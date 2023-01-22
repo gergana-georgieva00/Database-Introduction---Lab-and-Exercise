@@ -269,6 +269,9 @@ values ('Name1', 'LastName1', 'Title', 'SomeNotes'),
 	   ('Name2', 'LastName2', 'Title', 'SomeNotes'),
 	   ('Name3', 'LastName3', 'Title', 'SomeNotes');
 	   
-
+insert into Customers 
+values ('V123AB', 'John Doe', '123 Some Street', 'City', 123, 'Notes'),
+	   ('W123CD', 'Jane Doe', '123 Some Street', 'City', 123, 'Notes'),
+	   ('Y123EF', 'Ivan Doe', '123 Some Street', 'City', 123, 'Notes');
 
 
