@@ -228,6 +228,12 @@ create table Categories
 	WeekendRate bigint
 );
 
+use CarRental
+insert into Categories
+values ('Name1', 123, 456, 789, 345),
+	   ('Name2', 123, 456, 789, 345),
+	   ('Name3', 123, 456, 789, 345)
+	   
 
 
 
