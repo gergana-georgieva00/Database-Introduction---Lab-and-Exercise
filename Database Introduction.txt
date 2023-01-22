@@ -217,6 +217,17 @@ values ('Title1', 123, 1-1-1999, 120, 123, 456, 4, 'notes'),
 create database CarRental
 
 
+use CarRental
+create table Categories 
+(
+	Id bigint not null primary key identity,
+	CategoryName varchar(50) not null,
+	DailyRate bigint,
+	WeeklyRate bigint,
+	MonthlyRate bigint,
+	WeekendRate bigint
+);
+
 
 
 
