@@ -311,3 +311,8 @@ create table Employees
 	Notes ntext
 );
 
+insert into Employees 
+values ('John', 'Doe', 'title', 'notes'),
+	   ('John', 'Doe', 'title', 'notes'),
+	   ('John', 'Doe', 'title', 'notes');
+	   
