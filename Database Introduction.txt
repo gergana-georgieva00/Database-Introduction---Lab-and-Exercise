@@ -264,6 +264,11 @@ create table Employees
 	Notes ntext
 );
 
+insert into Employees
+values ('Name1', 'LastName1', 'Title', 'SomeNotes'),
+	   ('Name2', 'LastName2', 'Title', 'SomeNotes'),
+	   ('Name3', 'LastName3', 'Title', 'SomeNotes');
+	   
 
 
 
