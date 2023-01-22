@@ -255,6 +255,15 @@ values ('PlateNum1', 'manu1', 'model', 1999, 345, 2, '/some/path/image.png', 'us
 	   ('PlateNum2', 'manu1', 'model', 2000, 678, 4, '/some/path/image.png', 'used', 'true'),
 	   ('PlateNum3', 'manu1', 'model', 2007, 912, 4, '/some/path/image.png', 'used', 'true')
 	   
+create table Employees 
+(
+	Id bigint not null primary key identity,
+	FirstName varchar(20) not null,
+	LastName varchar(20) not null,
+	Title varchar(30),
+	Notes ntext
+);
+
 
 
 
