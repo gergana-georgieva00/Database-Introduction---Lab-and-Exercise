@@ -249,6 +249,12 @@ create table Cars
 	Avalilable varchar(5) check (Avalilable IN('true', 'false'))
 );
 
+use CarRental
+insert into Cars
+values ('PlateNum1', 'manu1', 'model', 1999, 345, 2, '/some/path/image.png', 'used', 'false'),
+	   ('PlateNum2', 'manu1', 'model', 2000, 678, 4, '/some/path/image.png', 'used', 'true'),
+	   ('PlateNum3', 'manu1', 'model', 2007, 912, 4, '/some/path/image.png', 'used', 'true')
+	   
 
 
 
