@@ -275,3 +275,22 @@ values ('V123AB', 'John Doe', '123 Some Street', 'City', 123, 'Notes'),
 	   ('Y123EF', 'Ivan Doe', '123 Some Street', 'City', 123, 'Notes');
 
 
+create table RentalOrders
+(
+	Id bigint not null primary key identity,
+	EmployeeId bigint not null unique,
+	CustomerId bigint not null unique,
+	CarId bigint not null unique,
+	TankLevel tinyint not null,
+	KilometrageStart bigint not null,
+	KilometrageEnd bigint not null,
+	TotalKilometrage bigint not null,
+	StartDate datetime not null,
+	EndDate datetime not null,
+	TotalDays int,
+	RateApplied bigint,
+	TaxRate bigint,
+	OrderStatus varchar(20),
+	Notes ntext
+);
+
