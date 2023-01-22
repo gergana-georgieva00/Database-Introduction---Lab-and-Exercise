@@ -328,3 +328,5 @@ create table Customers
 	Notes ntext
 );
 
+create database SoftUni
+
