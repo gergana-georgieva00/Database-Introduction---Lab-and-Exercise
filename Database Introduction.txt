@@ -234,6 +234,21 @@ values ('Name1', 123, 456, 789, 345),
 	   ('Name2', 123, 456, 789, 345),
 	   ('Name3', 123, 456, 789, 345)
 	   
+use CarRental
+create table Cars 
+(
+	Id bigint not null primary key identity,
+	PlateNumber varchar(50) not null,
+	Manufacturer varchar(50) not null,
+	Model varchar(50) not null,
+	CarYear smallint not null,
+	CategoryId bigint,
+	Doors tinyint,
+	Picture image,
+	Condition ntext,
+	Avalilable varchar(5) check (Avalilable IN('true', 'false'))
+);
+
 
 
 
