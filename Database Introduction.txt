@@ -386,3 +386,7 @@ values ('Ivan', 'Ivanov', 'Ivanov', '.NET Developer', (Select id from Department
 	   ('Georgi', 'Teziev', 'Ivanov', 'CEO', (Select id from Departments where name = 'Sales'), 09-12-2007, 3000.00, null),
 	   ('Peter', 'Pan', 'Pan', 'Intern', (Select id from Departments where name = 'Marketing'), 28-08-2016, 599.88, null);
 	   
+select * from Towns
+select * from Departments
+select * from Employees
+
