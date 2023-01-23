@@ -394,3 +394,7 @@ select *
 from Towns
 order by [Name];
 
+select * 
+from Towns
+order by [Name];
+
