@@ -330,6 +330,7 @@ create table Customers
 
 create database SoftUni
 
+use SoftUni
 create table Towns
 (
 	Id bigint not null primary key identity,
@@ -362,3 +363,10 @@ create table Employees
 	AddressId bigint not null foreign key references Addresses(Id)
 );
 
+use SoftUni
+insert into Towns
+values ('Sofia'),
+	   ('Plovdiv'),
+	   ('Varna'),
+	   ('Burgas');
+	   
