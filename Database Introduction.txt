@@ -402,3 +402,9 @@ select *
 from Employees
 order by [Salary] desc;
 
+select [Name]
+from Towns;
+
+select [Name]
+from Departments
+
