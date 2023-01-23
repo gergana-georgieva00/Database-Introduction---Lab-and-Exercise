@@ -340,7 +340,7 @@ create table Addresses
 (
 	Id bigint not null primary key identity,
 	AddressText varchar(50) not null,
-	TownId bigint not null foreign key
+	TownId bigint not null foreign key references Towns(Id)
 );
 
 create table Departments
