@@ -356,9 +356,9 @@ create table Employees
 	MiddleName varchar(50) not null,
 	LastName varchar(50) not null,
 	JobTitle varchar(30) not null,
-	DepartmentId bigint not null foreign key,
+	DepartmentId bigint not null foreign key references Departments(Id),
 	HireDate datetime,
 	Salary decimal,
-	AddressId bigint not null foreign key
+	AddressId bigint not null foreign key references Addresses(Id)
 );
 
