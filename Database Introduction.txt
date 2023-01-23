@@ -330,3 +330,9 @@ create table Customers
 
 create database SoftUni
 
+create table Towns
+(
+	Id bigint not null primary key identity,
+	[Name] varchar(50) not null
+);
+
