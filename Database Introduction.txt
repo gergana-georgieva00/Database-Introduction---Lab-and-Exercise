@@ -343,3 +343,9 @@ create table Addresses
 	TownId bigint not null foreign key
 );
 
+create table Departments
+(
+	Id bigint not null primary key identity,
+	[Name] varchar(50) not null
+);
+
