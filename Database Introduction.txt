@@ -378,3 +378,11 @@ values ('Engineering'),
 	   ('Software Development'),
 	   ('Quality Assurance');
 	   
+use SoftUni
+insert into Employees
+values ('Ivan', 'Ivanov', 'Ivanov', '.NET Developer', (Select id from Departments where name = 'Software Development'), 01-02-2013, 3500.00, null),
+	   ('Petar', 'Petrov', 'Petrov', 'Senior Engineer', (Select id from Departments where name = 'Engineering'), 02-03-2004, 4000.00, null),
+	   ('Maria', 'Petrova', 'Ivanova', 'Intern', (Select id from Departments where name = 'Quality Assurance'), 28-08-2016, 525.25, null),
+	   ('Georgi', 'Teziev', 'Ivanov', 'CEO', (Select id from Departments where name = 'Sales'), 09-12-2007, 3000.00, null),
+	   ('Peter', 'Pan', 'Pan', 'Intern', (Select id from Departments where name = 'Marketing'), 28-08-2016, 599.88, null);
+	   
