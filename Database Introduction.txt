@@ -349,3 +349,16 @@ create table Departments
 	[Name] varchar(50) not null
 );
 
+create table Employees
+(
+	Id bigint not null primary key identity,
+	FirstName varchar(50) not null,
+	MiddleName varchar(50) not null,
+	LastName varchar(50) not null,
+	JobTitle varchar(30) not null,
+	DepartmentId bigint not null foreign key,
+	HireDate datetime,
+	Salary decimal,
+	AddressId bigint not null foreign key
+);
+
