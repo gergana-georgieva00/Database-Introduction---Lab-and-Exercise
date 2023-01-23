@@ -370,3 +370,11 @@ values ('Sofia'),
 	   ('Varna'),
 	   ('Burgas');
 	   
+use SoftUni
+insert into Departments
+values ('Engineering'),
+	   ('Sales'),
+	   ('Marketing'),
+	   ('Software Development'),
+	   ('Quality Assurance');
+	   
